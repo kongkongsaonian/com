@@ -1,0 +1,14 @@
+/**
+ * swiper reset
+ */
+html,body{height: 100%;}
+.swiper-container{height: 100%;}
+.swiper-slide{height: 100%; overflow-y:scroll;}
+.swiper-slide img{width: 100%; position: relative;}
+.down{width: 3.5rem; margin: 0 auto; margin-top: -3rem;}
+.d2{margin-top: .5rem;}
+.d3{margin-top: .5rem;}
+
+.share-hide {
+	display: none;
+}

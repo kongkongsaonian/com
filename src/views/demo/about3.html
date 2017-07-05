@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>关于我们</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="人人有信用,信用有价值 普惠金融、投资理财、财富管理、信用风险评估">
+    <meta name="description" content="车蚁金服,投资理财,财富管理,信用风险评估,人人有信用,信用有价值">
+    <link rel="shortcut icon" href="http://assets.dxycdn.com/app/bbs/favicon@2x.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../css/base.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/about/app.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.0&services=true"></script>
+</head>
+<body>
+    <div class="nav-wrap">
+            <div class="nav">
+                <div class="logo-wrap"><img src=""></div>
+                <ul class="nav-items">
+                    <li class="item"><a href="../index.html">首页</a></li>
+                    <li class="item active"><a href="./about.html">关于我们</a></li>
+                </ul>
+
+            </div>
+    </div>
+    <div class="top-banner">
+        <div class="img-wrap">
+        </div>
+    </div>
+    <div class="container">
+        <div class="introduce">
+        
+        </div>
+        <div class="address">
+            <div style="width:700px;height:300px;border:#ccc solid 1px;" id="dituContent"></div>
+            <div class="address-text">
+                <p>
+                    <p class="big-title">公司名称:</p>
+                    <p class="small-title">车蚁金服</p>
+                </p>
+                <p>
+                    <p class="big-title">公司地址:</p>
+                    <p class="small-title">车蚁金服</p>
+                </p>
+                <p>
+                    <p class="big-title">联系方式:</p>
+                    <p class="small-title">车蚁金服</p>
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //创建和初始化地图函数：
+            function initMap(){
+                createMap();//创建地图
+                setMapEvent();//设置地图事件
+                addMapControl();//向地图添加控件
+                addRemark();//向地图中添加文字标注
+            }
+            
+            //创建地图函数：
+            function createMap(){
+                var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                var point = new BMap.Point(120.078445,30.292973);//定义一个中心点坐标
+                map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+                window.map = map;//将map变量存储在全局
+            }
+            
+            //地图事件设置函数：
+            function setMapEvent(){
+                map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                map.enableKeyboard();//启用键盘上下左右键移动地图
+            }
+            
+            //地图控件添加函数：
+            function addMapControl(){
+                //向地图中添加缩放控件
+            var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+            map.addControl(ctrl_nav);
+                //向地图中添加缩略图控件
+            var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+            map.addControl(ctrl_ove);
+                //向地图中添加比例尺控件
+            var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+            map.addControl(ctrl_sca);
+            }
+            
+            //文字标注数组
+            var lbPoints = [{point:"120.078248|30.292871",content:"车蚁金服"}
+                 ];
+            //向地图中添加文字标注函数
+            function addRemark(){
+                for(var i=0;i<lbPoints.length;i++){
+                    var json = lbPoints[i];
+                    var p1 = json.point.split("|")[0];
+                    var p2 = json.point.split("|")[1];
+                    var label = new BMap.Label("<div style='padding:2px;'>"+json.content+"</div>",{point:new BMap.Point(p1,p2),offset:new BMap.Size(3,-6)});
+                    map.addOverlay(label);
+                    label.setStyle({borderColor:"#999"});
+                }
+            }
+            
+            initMap();//创建和初始化地图
+        </script>     
+    </div>
+    <div class="footer">
+            <p>©2015-2017&nbsp;&nbsp;杭州车蚁金服科技有限公司版权所有&nbsp;&nbsp;&nbsp;&nbsp;浙ICP备15009112号</p>
+            <div style="width:300px;margin:0 auto; padding:10px 0;">
+                <a class="beian" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602008020">
+                <img src="../images/beian.png" style="float:left;">
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color#939393;">浙公网安备 33010602008020号</p></a>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/**
+ * index
+ */
+body {
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 710px;
+    background: url('https://img.51bankcar.cn/h5/com/version1/banner.jpg') no-repeat;
+    background-size: 100% auto;
+    padding-top: 340px;
+    overflow: hidden;
+
+    .big-title {
+        width: 700px;
+        margin: 0 auto;
+        color: #333;
+        font-size: 60px;
+        letter-spacing: 8px;
+        text-align: center;
+
+        span {
+            color: #40c2ff;
+        }
+
+    }
+
+    .small-title {
+        width: 214px;
+        margin: 0 auto;
+        margin-top: 42px;
+        text-align: center;
+        font-size: 22px;
+        color: #929292;
+
+    }
+}
+
+.main-adv {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1089px;
+    height: 309px;
+    background: url('https://img.51bankcar.cn/h5/com/version1/shadow_bg.png') no-repeat;
+    background-size: 100% 100%;
+    margin-top: -78px;
+
+        .dz-margin {
+            margin-left: 170px;
+        }
+
+        .sy-margin {
+            margin-left: 180px;
+            margin-right: 165px;
+        }
+    .item {
+        float: left;
+        width: 140px;
+        height: auto;
+        margin-top: 76px;
+        text-align: center;
+
+        .dz-wrap {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto;
+        }
+        .sy-wrap {
+            width: 65px;
+            height: 73px;
+            margin: 0 auto;
+        }
+        .dq-wrap {
+            width: 58px;
+            height: 71px;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-top: 32px;
+            font-size: 18px;
+            color: #61728c;
+        }
+
+        
+        img {
+            width: 100%;
+        }
+
+
+    }
+
+}
+
+.four-bz {
+    width: 1060px;
+    height: 910px;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 160px;
+    position: relative;
+    text-align: center;
+
+
+    .text-title {
+        font-size: 26px;
+        color: #40c2ff;
+    }
+
+    .text-detail {
+        font-size: 16px;
+        line-height: 28px;
+        color: #666;
+        margin-top: 18px;
+        margin-bottom: 38px;
+    }
+    
+    .center-bz {
+
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 378px;
+        height: 378px;
+
+        .img-wrap {
+            width: 100%;
+        }
+
+    }
+
+    .zs-bz {
+        position: absolute;
+        top: 0;
+        right: 230px;
+        width: 268px;
+
+        .img-wrap {
+            width: 165px;
+            margin: 0 auto;
+        }
+    }
+
+    .zy-bz {
+        position: absolute;
+        top: 482px;
+        right: 0;
+        width: 268px;
+
+        .img-wrap {
+            width: 197px;
+            margin: 0 auto;
+        }
+    }
+    .yg-bz {
+        position: absolute;
+        bottom: 0;
+        left: 52px;
+        width: 328px;
+
+        .text-detail {
+            width: 268px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .img-wrap {
+            width: 313px;
+            margin: 0 auto;
+        }
+    }
+    .tm-bz {
+        position: absolute;
+        top: 102px;
+        left: 0;
+        width: 268px;
+
+        .img-wrap {
+            width: 177px;
+            margin: 0 auto;
+        }
+    }
+}

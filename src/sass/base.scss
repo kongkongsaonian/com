@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Microsoft YaHei",  Helvetica, "Hiragino Sans GB", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+    content: none;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    outline: 0;
+    border: solid 1px #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    width: 100%;
+    border: 0;
+}
+
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 0;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1080px;
+    height: 100%;
+}
+
+.img-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrap img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    background: #936fd9;
+    text-align: center;
+    -webkit-transform: all 0.3s;
+        -ms-transform: all 0.3s;
+            transform: all 0.3s
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.text-over {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+ * common.css
+ */
+
+.footer {
+    width: 100%;
+    background: #586068;
+    height: 100px;
+    
+    p {
+        text-align: center;
+        font-size: 12px;
+        line-height: 100px;
+        color: #fff;
+
+        span {
+            margin-left: 44px;
+        }
+
+    }
+}
+
+.nav-mask {
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 20px #f3f8fa;
+}
+
+.nav-wrap {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+
+    .nav {
+        width: 1200px;
+        height: 70px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .logo-wrap {
+            float: left;
+            width: 118px;
+            height: 32px;
+            margin-top: 16px;
+
+            a {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        ul {
+            float: right;
+            overflow: hidden;
+            font-size: 14px;
+            color: #444;
+
+            li {
+                float: left;
+                line-height: 70px;
+                margin-left: 68px;
+            }
+            
+            .active {
+                color: #e94458;
+                font-weight: bold;
+            }
+
+        }
+    }
+}

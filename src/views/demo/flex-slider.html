@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+	<title>车蚁金服</title>
+    <meta name="keywords" content="人人有信用,信用有价值 普惠金融、投资理财、财富管理、信用风险评估">
+    <meta name="description" content="宜信财富,普惠金融,投资理财,财富管理,信用风险评估,人人有信用,信用有价值">
+    <link rel="shortcut icon" href="http://assets.dxycdn.com/app/bbs/favicon@2x.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/base.min.css">
+    <link href="https://cdn.bootcss.com/flexslider/2.1/flexslider-min.css" rel="stylesheet">
+    <style>
+        .flexslider {
+            border: 0;
+        }
+        img {
+            width: 100%;
+            height: 400px;
+        }
+        .flex-caption {
+          width: 100%;
+          height: 60px;
+          background: rgba(0,0,0,.5);
+          color: #fff;
+          text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+          font-size: 20px;
+          line-height: 60px;
+        }
+        .flex-control-paging li a {
+            width: 40px;
+            height: 20px;
+        }
+
+    </style>
+
+	<script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.1/jquery.flexslider-min.js"></script>
+</head>
+<body>
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+          <img src="./images/slid1.png" />
+          <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+        </li>
+        <li>
+          <img src="./images/slid2.png" />
+          <p class="flex-caption">Adventurer Lemon</p>
+        </li>
+        <li>
+          <img src="./images/slid3.png" />
+          <p class="flex-caption">Adventurer Donut</p>
+        </li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+$(function() {
+    $('.flexslider').flexslider({
+        animation: "fade",
+        slideshowSpeed: 3000,
+        directionNav: false,
+        manualControlsEvent: 'hover'
+    });
+
+});
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script type="text/javascript">
+        if (isMobile()) {
+            window.location = './mobile.html';
+        }
+        function isMobile() {
+            return /(iphone|ipad|ipod|ios|android|mobile|blackberry|iemobile|mqqbrowser|juc|fennec|wosbrowser|browserng|Webos|symbian|windows phone)/i.test(navigator.userAgent);
+        }
+    </script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+	<title>车蚁金服</title>
+    <meta name="keywords" content="人人有信用,信用有价值 普惠金融、投资理财、财富管理、信用风险评估">
+    <meta name="description" content="宜信财富,普惠金融,投资理财,财富管理,信用风险评估,人人有信用,信用有价值">
+    <link rel="shortcut icon" href="https://img.51bankcar.cn/h5/com/icon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/base.min.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+</head>
+<body>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="logo-wrap">
+                <a href="https://www.51bankcar.cn">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/logo@2x.png">
+                </a>
+                </div>
+                <ul class="nav-items">
+                    <li class="active"><a href="./index2.html">首页</a></li>
+                    <li><a href="./views/about.html">关于我们</a></li>
+                    <li><a href="./views/download.html">下载APP</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="big-title">
+                <p>汽车行业的<span>未来银行</span></p>
+            </div>
+            <div class="small-title">
+                车蚁金服，全新上线
+            </div>
+        </div>
+        <div class="main-adv">
+            <div class="item dz-margin">
+                <div class="dz-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/dz_adv.png">
+                </div>
+                <p>贷款垫资风险低</p>
+            </div>
+            <div class="item sy-margin">
+                <div class="sy-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/sy_adv.png">
+                </div>
+                <p>收益稳定有保障</p>
+            </div>
+            <div class="item ">
+                <div class="dq-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/dq_adv.png">
+                </div>
+                <p>短期理财效益高</p>
+            </div>
+
+
+        </div>
+        <div class="four-bz">
+            <div class="center-bz">
+                <div class="img-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/four_bz@2x.png">
+                </div>
+            </div>
+            <div class="zs-bz">
+                <p class="text-title">标的真实可查</p>
+                <p class="text-detail">平台发售的每一个项目标的均为线下真实标的，每一个项目标的对应单一借款人，
+并提供单一合同。</p>
+                <div class="img-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/zs_bz.png">
+                </div>
+            </div>
+            <div class="zy-bz">
+                <p class="text-title">平台团队专业</p>
+                <p class="text-detail">团队均来自金融、银行、法律、互联网领域的资深专业人士，是一家集金融投资、管理、  咨询及金融服务一体化的控股混合所有制金融机构。</p>
+                <div class="img-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/zy_bz.png">
+                </div>
+            </div>
+            <div class="yg-bz">
+                <p class="text-title">标的风控严格</p>
+                <p class="text-detail">车蚁金服采取线上平台审核和线下稻普集团审核两套审核机制，事前评估，过程严格控制，事后稽查三点结合，多途径交叉验证拒绝劣质资产。</p>
+                <div class="img-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/yg_bz.png">
+                </div>
+            </div>
+            <div class="tm-bz">
+                <p class="text-title">资金去向透明</p>
+                <p class="text-detail">每一笔资金的流向透明，项目数据透明
+用户资金全程透明。</p>
+                <div class="img-wrap">
+                    <img src="https://img.51bankcar.cn/h5/com/version1/tm_bz.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+                <p>Copyright © 2017 51Bankcar.cn Inc. All rights reserved.<span>浙ICP备16001327号-1</span></p>
+        </div>
+    <script src="https://img.51bankcar.cn/h5/assets/jquery-1.12.min.js"></script>
+    <script>
+            var $nav = $('.nav-wrap');
+            $(window).scroll(function(event) {
+                if ($(document).scrollTop() > 0) {
+                        $nav.addClass('nav-mask');
+                    } else {
+                        $nav.removeClass('nav-mask');
+                    }
+            });
+    </script>
+</body>
+</html>

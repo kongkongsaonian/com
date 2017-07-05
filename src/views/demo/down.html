@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>宜信财富APP</title>
+	<script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);flex(100, 1);
+	  </script>
+	<link rel="stylesheet" href="../css/base.min.css">
+	<link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/download/app.min.css">
+	<script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="share-hide">
+			<img src="../images/share.png">
+		</div>
+		<div class="swiper-container swiper-container-vertical">
+			<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+				<div class="swiper-slide xz1 swiper-slide-active">
+					<img src="http://app.yixin.com/Public/app/img/1.png" alt="">
+					<a class="down" href="http://app.yixin.com/app/clickurl.html?code=37" style="display:block"><img src="http://app.yixin.com/Public/app/img/4.png"></a>
+				</div>
+				<div class="swiper-slide xz2 swiper-slide-next">
+					<img src="http://app.yixin.com/Public/app/img/2.png" alt="">
+					<a class="down d2" href="http://app.yixin.com/app/clickurl.html?code=37" style="display:block"><img src="http://app.yixin.com/Public/app/img/4.png"></a>
+				</div>
+				<div class="swiper-slide xz3">
+					<img src="http://app.yixin.com/Public/app/img/3.png" alt="">
+					<a class="down d3" href="http://app.yixin.com/app/clickurl.html?code=37" style="display:block"><img src="http://app.yixin.com/Public/app/img/4.png"></a>
+				</div>
+				
+
+			</div>
+				
+		</div>
+
+		<script>
+
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				direction: 'vertical',
+    			autoHeight: true,
+				onSlideChangeEnd: function(swiper) {
+					//alert(swiper.activeIndex) //切换结束时，告诉我现在是第几个slide
+					if(swiper.activeIndex == 0) {
+						
+					}
+				}
+				
+
+			});
+
+		var u = navigator.userAgent;
+		var isAndroid = /(Android|Adr)/i.test(navigator.userAgent);
+		var isIOS = /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent);
+		if (isIOS) {
+			alert(66);
+
+		}
+		</script>
+
+</body></html>

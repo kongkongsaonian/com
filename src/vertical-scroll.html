@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+	<title>车蚁金服</title>
+    <meta name="keywords" content="人人有信用,信用有价值 普惠金融、投资理财、财富管理、信用风险评估">
+    <meta name="description" content="宜信财富,普惠金融,投资理财,财富管理,信用风险评估,人人有信用,信用有价值">
+    <link rel="shortcut icon" href="https://img.51bankcar.cn/h5/com/icon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/base.min.css">
+	<script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.min.js"></script>
+    <style>
+
+        .wrap {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .items {
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .item {
+            display: inline-block;
+            width: 240px;
+            text-align: center;
+        }
+
+        .item img {
+            width: 90%;
+        }
+        
+        .v-wrap {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+            border: 1px solid #0f0;       
+        }
+        .v-items {
+            overflow: hidden;
+            height: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .v-items li {
+            font-size: 22px;
+            color: #666;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .apple{ 
+            height:50px;
+            overflow:hidden;
+            width:90%;
+            margin:30px auto;
+            border:1px solid #1B96EE;
+            text-align: center;
+        }
+        .apple a{
+                    width:100%;
+                    height:50px;
+                    line-height:50px;
+                    color:#1B96EE;
+                    display:block;
+                    text-decoration:none;
+        }
+
+        @media (max-width: 640px) {
+            .item {
+                width: 160px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+        <div class="wrap">
+            <ul class="items"><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner0.8a07a886.jpg" alt=""></li><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner1.56bcecb3.png" alt=""></li><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner2.9a7e8842.jpg" alt=""></li><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner3.47acdfbd.png" alt=""></li><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner5.e9205d49.jpg" alt=""></li><!--
+            --><li class="item"><img src="https://static.tigerbrokers.com/portal/images/cooperation/stockGame/v2-partner6.83b14a71.png" alt=""></li><!--
+            --></ul>
+        </div>
+        <div class="v-wrap">
+            <ul class="v-items">
+                <li>1某某某 134*****1455</li>
+                <li>2某某某 134*****1455</li>
+                <li>3某某某 134*****1455</li>
+                <li>4某某某 134*****1455</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+
+            <div class="apple">
+                <ul>
+                    <li><a href="#" target="_blank">你是我的小丫小苹果 </a></li>  
+                    <li><a href="#" target="_blank">怎么爱你都不嫌多</a></li> 
+                    <li><a href="#" target="_blank">红红的小脸儿温暖我的心窝</a></li>
+                    <li><a href="#" target="_blank">点亮我生命的火 火火火火</a></li>
+                    <li><a>4</a></li>
+                    <li><a>5</a></li>
+                    <li><a>某某某 183***4567</a></li>
+                </ul>
+            </div>
+            <marquee direction="up" behavior="scroll"><br>
+                金风玉露一相逢, 便胜却人间无数.<br>
+                两情若是久长时, 又岂在朝朝暮暮.<br>
+            </marquee>
+        <marquee direction="right" behavior="alternate"><br>
+            金风玉露一相逢, 便胜却人间无数.<br>
+            两情若是久长时, 又岂在朝朝暮暮.<br>
+        </marquee>
+
+        <marquee direction="left"
+                 behavior="scroll"
+                 scrollamount="30"
+                 scrolldelay="0"
+                 loop="-1"
+                 width="500"
+                 height="100"
+                 bgcolor="#FFCCFF"
+                 hspace="30"
+                 vspace="10"
+                 onmouseover=this.stop()
+                 onmouseout=start()><br>
+            <a href=#>金风玉露</a>一相逢, 便胜却人间无数.<br>
+            两情若是久长时, 又岂在朝朝暮暮.<br>
+        </marquee>
+
+        <script type="text/javascript">
+              function autoScroll(obj){  
+                    $(obj).find("ul").animate({  
+                        marginTop : "-49px"
+                    },500,function(){
+                        $(this).css({marginTop : "0px"}).find("li:first").appendTo(this);
+                    })
+                } 
+                $(function(){
+                    var timer3=setInterval('autoScroll(".apple")',1500);
+                    $(".apple").mouseover(function() {
+                        clearInterval(timer3);
+                    });
+                    $(".apple").mouseout(function() {
+                        timer3=setInterval('autoScroll(".apple")',1500);
+                    });
+
+                })
+        </script>
+        <script type="text/javascript">
+
+                var $items = $('.items'),
+                    lastTime = 0,
+                    nextFrame = window.requestAnimationFrame       ||
+                                window.webkitRequestAnimationFrame ||
+                                window.mozRequestAnimationFrame    ||
+                                window.msRequestAnimationFrame     ||
+                                function(callback) {
+                                    var currTime = + new Date,
+                                        delay = Math.max(1000/60, 1000/60 - (currTime - lastTime));
+                                    lastTime = currTime + delay;
+                                    return setTimeout(callback, delay);
+                                },
+                    cancelFrame = window.cancelAnimationFrame               ||
+                                  window.webkitCancelAnimationFrame         ||
+                                  window.webkitCancelRequestAnimationFrame  ||
+                                  window.mozCancelRequestAnimationFrame     ||
+                                  window.msCancelRequestAnimationFrame      ||
+                                  clearTimeout,
+                    scrollX = 0,
+                    itemW = 240,
+                    target = 0,
+                    timer = null;
+
+                if ($items.children().eq(0).width() == 190) {
+                    itemW = 190;
+                }
+                if ($items.children().eq(0).width() == 160) {
+                    itemW = 160;
+                }
+                target = itemW * $items.children().length;
+
+                $items.html( $items.html() + $items.html() );
+
+                adAni();
+
+                function adAni() {
+                    timer = nextFrame(function() {
+                        scrollX += 1;
+                        if (scrollX >= target) {
+                            scrollX = 0;
+                        }
+                        $items.scrollLeft(scrollX);
+                        adAni();
+                    });
+                }
+                if (!isMobile()) {
+                    $items.on('mouseover', function() {
+                        cancelFrame(timer);
+                    }).on('mouseout', function() { adAni(); });
+                }
+
+                var sX, sL;
+                $items.on('touchstart', function(e) {
+                    cancelFrame(timer);
+                    sX = e.originalEvent.changedTouches[0].pageX;
+                    sL = $items.scrollLeft();
+                }).on('touchmove', function(e) {
+                    var dis = e.originalEvent.changedTouches[0].pageX - sX;
+                    var nowX = sL - dis;
+                    if (nowX > target) {
+                        nowX = 0;
+                    }
+                    $items.scrollLeft(nowX);
+                }).on('touchend', function(e) {
+                    scrollX = $items.scrollLeft();
+                    if (scrollX >= target) {
+                        scrollX = 0;
+                    }
+                    adAni();
+                })
+
+                // 判断是否在移动端
+                function isMobile() {
+                    return /(iphone|ipad|ipod|ios|android|mobile|blackberry|iemobile|mqqbrowser|juc|fennec|wosbrowser|browserng|Webos|symbian|windows phone)/i.test(navigator.userAgent);
+                }
+
+        </script>
+        <script>
+            // 垂直运动
+            var $v = $('.v-items');
+            var scrollY = 0;
+
+            var vtarget = 30 * $v.children().length;
+
+            $v.html( $v.html() + $v.html() );
+
+                vAni();
+                function vAni() {
+                    timer2 = nextFrame(function() {
+
+                        if(scrollY == 150) {
+                            cancelFrame(timer2);
+                             setTimeout(function() {
+                                nextFrame(function() {
+                                    scrollY += .5;
+                                });
+                             }, 500);
+                        } else {
+                        scrollY += .5}
+                        if (scrollY >= vtarget) {
+                            scrollY = 0;
+                        }
+
+                        $v.scrollTop(scrollY);
+                        vAni();
+                    });
+                }
+
+
+
+        </script>
+</body>
+</html>
