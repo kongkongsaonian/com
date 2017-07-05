@@ -1,5 +1,5 @@
-# To start
-车蚁金服官网项目(dev版本)
+# Description
+车蚁金服官网
 # 安装依赖
 npm install (建议使用cnpm)
 # 运行方式
