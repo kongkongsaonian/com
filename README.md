@@ -12,4 +12,4 @@ npm run build
 Modern browsers and IE 9+.
 
 
-![wechatid](https://raw.githubusercontent.com/taylorchen709/markdown-images/master/mywechatid.jpg)
+![wechatid](https://img.51bankcar.cn/h5/com/logo.png)
